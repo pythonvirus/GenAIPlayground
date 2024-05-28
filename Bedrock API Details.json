@@ -1,0 +1,33 @@
+{
+    "modelId": "meta.llama2-70b-chat-v1",
+    "contentType": "application/json",
+    "accept": "application/json",
+    "body": "{\"prompt\":\"[INST]You are a a very intelligent bot with exceptional critical thinking[/INST]\\nI went to the market and bought 10 apples. I gave 2 apples to your friend and 2 to the helper. I then went and bought 5 more apples and ate 1. How many apples did I remain with?\\n\\nLet's think step by step.\",\"max_gen_len\":512,\"temperature\":0.5,\"top_p\":0.9}"
+  }
+
+  {
+    "modelId": "anthropic.claude-v2",
+    "contentType": "application/json",
+    "accept": "application/json",
+    "body": "{\"messages\":[{\"role\":\"user\",
+    \"content\":[{\"type\":\"text\",
+    \"text\":\"Human: You are an expert social media content generator. 
+    Draft an exciting and socially-\\nengaging blog post for a major travel website and newsletter. 
+    The post should be a travel guide\\nfor Iceland that highlights recommended attractions, restaurants, 
+    and sights to see, along\\nwith tips and tricks for travel.\\nEach paragraph should focus on a different topic, 
+    such as travel tips & tricks, best sights to\\nsee, best food to eat, and so on. Within each topic, 
+    whenever there is a list (such as a list of\\nfoods or a list of places), make each item on the list 
+    its own line with its own short\\ndescription. Name each thematic paragraph with just the name of the paragraph 
+    (NEVER a marker\\nlike \\\"paragraph 1\\\" etc.). Include a call to action to buy tickets now at the end of the post.\\n
+    The audience for this text is people excited to travel but who have never been to Iceland\\nbefore. 
+    The goal of the article is to drum up excitement for Iceland and leave readers with the\\nimpression that the travel 
+    website is a trusted source of information for travel to Iceland.\\nWrite your response in markdown format.\\n
+    NEVER generate text before the article. Generate the article only (including the title).\\nAssistant:\"}]}],\"anthropic_version\":\"bedrock-2023-05-31\",\"max_tokens\":2048,\"temperature\":1,\"top_k\":250,\"top_p\":1,\"stop_sequences\":[\"\\n\\nHuman:\"]}"
+  }
+
+  {
+    "modelId": "stability.stable-diffusion-xl-v1",
+    "contentType": "application/json",
+    "accept": "application/json",
+    "body": "{\"text_prompts\":[{\"text\":\"Sri lanka tea plantation.\",\"weight\":1}],\"cfg_scale\":10,\"seed\":0,\"steps\":50,\"width\":1024,\"height\":1024}"
+  }
