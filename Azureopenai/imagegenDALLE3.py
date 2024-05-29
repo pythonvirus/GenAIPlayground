@@ -16,7 +16,7 @@ deployment_name=os.getenv("deployment_name")
 
 result = client.images.generate(
     model="Dalle3", # the name of your DALL-E 3 deployment
-    prompt="give me closeup image of fish who is dancing in water.",
+    prompt="Give me closeup image of fish who is dancing in water.",
     n=1
 )
 
