@@ -1,4 +1,13 @@
+langchain
+langchainhub
+bs4
+tiktoken
 boto3
 awscli
 Pillow
-chromadb #for PIL
+chromadb
+streamlit
+pypdf
+faiss-cpu
+langchain_community
+ #for PIL
