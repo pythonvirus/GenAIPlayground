@@ -40,11 +40,11 @@ def generate_image(model_id, body):
     logger.info("Successfully generated image withvthe SDXL 1.0 model %s", model_id)
     return image_bytes
 
-def main(): 
+def main(prompt): 
     """ Entrypoint for SDXL example. """ 
     logging.basicConfig(level = logging.INFO, format = "%(levelname)s: %(message)s") 
     model_id='stability.stable-diffusion-xl-v1' 
-    prompt="""Sri lanka tea plantation.""" 
+     
     # Create request body. 
     body=json.dumps({ "text_prompts": [ { "text": prompt } ], 
                     "cfg_scale": 10, 
@@ -70,4 +70,5 @@ def main():
         print(f"Finished generating text with SDXL model {model_id}.")
 
 if __name__ == "__main__": 
-    main()
+    prompt="""AI Over engineering Alert"""
+    main(prompt)
