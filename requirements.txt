@@ -1,3 +1,4 @@
 boto3
 awscli
-Pillow #for PIL
+Pillow
+chromadb #for PIL
